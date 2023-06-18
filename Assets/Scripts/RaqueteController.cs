@@ -45,7 +45,7 @@ public class RaqueteController : MonoBehaviour
             //Pegando a setinha para cima
             //Se eu aperta a setinha para cima ele vai subir a raquete.
             //DeltaTime para normalizar frames.
-            //Controlando a raquete como o playerrr 1
+            //Controlando a raquete como o player 1
 
             if (player1)
             {
