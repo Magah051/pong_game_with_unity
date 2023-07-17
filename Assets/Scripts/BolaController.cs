@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class BolaController : MonoBehaviour
 {
-    //Criando a variável para saber quem é o meu rigidbody
+    //Criando a variï¿½vel para saber quem ï¿½ o meu rigidbody
     public Rigidbody2D meuRB;
     private Vector2 minhaVelocidade;
     public float velocidade = 5f;
@@ -32,15 +32,15 @@ public class BolaController : MonoBehaviour
         //Diminuindo o valor do deley
         delay = delay - Time.deltaTime;
 
-        //Checando se o deley chegou em 0 para então iniciar o jogo
+        //Checando se o deley chegou em 0 para entï¿½o iniciar o jogo
         if (delay <= 0 && jogoIniciado == false)
         {
-            //Alterar valor da variável de controle
+            //Alterar valor da variï¿½vel de controle
             jogoIniciado = true;
             //Iniciando o jogo
 
 
-            //Tentando gerar um valor aleatório
+            //Tentando gerar um valor aleatï¿½rio
             int direcao = Random.Range(0, 4);
 
             if (direcao == 0)
@@ -77,8 +77,8 @@ public class BolaController : MonoBehaviour
         }
     }
 
-    //Criando o meu evento de colisão
-    //Evento de colisão 2d
+    //Criando o meu evento de colisao
+    //Evento de colisao 2d
     private void OnCollisionEnter2D(Collision2D collision)
     {
         AudioSource.PlayClipAtPoint(boing, transforCamera.position);
