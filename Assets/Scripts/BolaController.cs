@@ -32,15 +32,15 @@ public class BolaController : MonoBehaviour
         //Diminuindo o valor do deley
         delay = delay - Time.deltaTime;
 
-        //Checando se o deley chegou em 0 para ent�o iniciar o jogo
+        //Checando se o deley chegou em 0 para entao iniciar o jogo
         if (delay <= 0 && jogoIniciado == false)
         {
-            //Alterar valor da vari�vel de controle
+            //Alterar valor da variavel de controle
             jogoIniciado = true;
             //Iniciando o jogo
 
 
-            //Tentando gerar um valor aleat�rio
+            //Tentando gerar um valor aleatario
             int direcao = Random.Range(0, 4);
 
             if (direcao == 0)
